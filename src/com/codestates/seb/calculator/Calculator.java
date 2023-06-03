@@ -18,15 +18,17 @@ public class Calculator {
 
     double a = input1.nextDouble();
 
-    System.out.println("숫자를 입력하세요");
-    Scanner input3 = new Scanner(System.in);
-    double c = input3.nextDouble();
+
 
     System.out.println("연산자를 입력해 주세요");
-    Scanner input2 = new Scanner(System.in);
-    String b = input2.nextLine();
+    //Scanner input2 = new Scanner(System.in);
+    String b = input1.next();
 
-    double result = 0.0;
+    System.out.println("숫자를 입력하세요");
+    //Scanner input3 = new Scanner(System.in);
+    double c = input1.nextDouble();
+
+    double result = 0;
     if(b.equals("+")){
        result = a + c;
     }
